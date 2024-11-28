@@ -4,5 +4,5 @@ RUN apk --no-cache add msttcorefonts-installer fontconfig && \
     fc-cache -f
 WORKDIR /app
 EXPOSE 8080
-COPY target/*.jar /app/sofka-test-backend.jar
-CMD [ "java", "-jar", "/app/sofka-test-backend.jar" ]
+COPY target/*.jar /app/pagos-backend.jar
+CMD [ "java", "-jar", "/app/pagos-backend.jar" ]
